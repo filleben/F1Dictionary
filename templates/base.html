@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
     <title>F1 Dictionary</title>
 </head>
+{% include 'header.html' %}
+    
 
+{% block content %}
+{% endblock %}
 <body>
-    <h1 class="center">Formula 1 Dictionary</h1>
     <div class="block-divider"></div>
     <div class="container">
         <ul class="collapsible popout">
