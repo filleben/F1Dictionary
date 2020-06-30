@@ -6,7 +6,7 @@
 
 ## [Project Repository](https://github.com/filleben/F1Dictionary)
 
-## [Deployed Site](...)
+## [Deployed Site](https://f1-dictionary.herokuapp.com/)
 
 ---
 
@@ -46,3 +46,9 @@ I expect that the majority of the users will fall into the following criteria:
 [Here](https://github.com/filleben/F1Dictionary/tree/master/wireframes) are the designs I made for the site.
 
 The wireframes were made using [Balsamiq](https://balsamiq.cloud)
+
+### Design Choices
+
+- **Font**: I wanted the project to look as professional as possible so decided to use a copy of the official Formula One font sourced from [Here](https://www.ffonts.net/Formula1-Display-Regular.font.download).
+
+- **Colours**: I wanted the project to look like a product from Formula One so with this in mind I used the same colour scheme used on the [Official Site](https://www.formula1.com/). I used white (Hex: '#ffffff' RGB: 'rgb(255, 255, 255)') as the background and navbar font colour, red (Hex: '#ff0000' RGB: 'rgb(255, 0, 0)') for the navbar and block-divder elements and then black (Hex: '#000000' RGB: 'rgb(0, 0, 0)') for the body text.
