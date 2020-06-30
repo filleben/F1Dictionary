@@ -1,6 +1,6 @@
 @font-face {
     font-family: "f1Font";
-    src: url("/static/fonts/Formula1-Regular.ttf")  format("truetype");
+    src: url("/static/fonts/Formula1-Regular.ttf") format("truetype");
 }
 
 .center {
@@ -17,4 +17,14 @@
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.navbar {
+    font-family: "f1Font";
+    background-color: #FF0000;
+}
+
+.title {
+    font-family: "f1Font";
+    color: #000000;
 }
