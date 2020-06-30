@@ -1,5 +1,20 @@
+@font-face {
+    font-family: "f1Font";
+    src: url("/static/fonts/Formula1-Regular.ttf")  format("truetype");
+}
+
 .center {
+    font-family: "f1Font";
     text-align: center;
     justify-content: center;
 }
 
+.block-divider {
+    width: 125px;
+    height: 10px;
+    border: 0;
+    background-color: #FF0000;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
