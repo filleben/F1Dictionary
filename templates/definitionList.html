@@ -1,5 +1,6 @@
 {% extends 'base.html'%} {% block content %}
 <h4 class="center">Edit or Delete a definition below!</h4>
+<h5 class="center">WARNING: Deleting data can not be undone!</h5>
 <div class="block-divider"></div>
 <div class="container">
     <ul class="collapsible" data-collapsible="accordion">
@@ -7,8 +8,7 @@
         <li>
             <div class="collapsible-header">
                 <div class="">
-                    <a href="" class="btn waves-effect waves-light btn-edit">Del</a>
-
+                    <a href="{{url_for('delete_term', term_id=term._id)}}" class="btn waves-effect waves-light btn-edit del">Del</a>
                     <a href="{{url_for('edit_definition', term_id=term._id)}}" class="btn waves-effect waves-light btn-edit">Edit</a>
                 </div>
                 <div class="term_header">
