@@ -19,7 +19,7 @@ def display_definitions():
     g_l = mongo.db.definitions.find({"category_name": "G-L"})
     m_r = mongo.db.definitions.find({"category_name": "M-R"})
     s_z = mongo.db.definitions.find({"category_name": "S-Z"})
-    return render_template('base.html', A_F=a_f, G_L=g_l, M_R=m_r, S_Z=s_z)
+    return render_template('index.html', A_F=a_f, G_L=g_l, M_R=m_r, S_Z=s_z)
 
 @app.route('/add_definition')
 def add_definition():
