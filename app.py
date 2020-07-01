@@ -13,12 +13,23 @@ app.config["MONGO_URI"] = os.environ.get('MONGO_URI', 'mongodb://localhost')
 mongo = PyMongo(app)
 
 @app.route('/')
+@app.route('/display_definitions')
 def display_definitions():
     a_f = mongo.db.definitions.find({"category_name": "A-F"})
     g_l = mongo.db.definitions.find({"category_name": "G-L"})
     m_r = mongo.db.definitions.find({"category_name": "M-R"})
     s_z = mongo.db.definitions.find({"category_name": "S-Z"})
     return render_template('base.html', A_F=a_f, G_L=g_l, M_R=m_r, S_Z=s_z)
+
+@app.route('/add_definition')
+def add_definition():
+    return render_template('addDefinition.html', categories=mongo.db.categories.find())
+
+@app.route('/insert_definition', methods=['POST'])
+def insert_definition():
+    definitons = mongo.db.definitions
+    definitons.insert_one(request.form.to_dict())
+    return redirect(url_for('display_definitions'))
     
 if __name__ == '__main__':
    app.run(host=os.environ.get('IP'),
