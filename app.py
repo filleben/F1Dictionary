@@ -30,6 +30,10 @@ def insert_definition():
     definitons = mongo.db.definitions
     definitons.insert_one(request.form.to_dict())
     return redirect(url_for('display_definitions'))
+
+@app.route('/definition_list')
+def definition_list():
+    return render_template('definitionList.html', terms=mongo.db.definitions.find())
     
 if __name__ == '__main__':
    app.run(host=os.environ.get('IP'),
