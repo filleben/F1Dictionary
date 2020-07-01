@@ -3,6 +3,11 @@
     src: url("/static/fonts/Formula1-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "f1FontBold";
+    src: url("/static/fonts/Formula1-Bold.ttf") format("truetype");
+}
+
 .center {
     font-family: "f1Font";
     text-align: center;
@@ -27,4 +32,8 @@
 .title {
     font-family: "f1Font";
     color: #000000;
+}
+
+.bold {
+    font-family: "f1FontBold";
 }
