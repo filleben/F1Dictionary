@@ -51,6 +51,11 @@ def update_definition(term_id):
         'definition': request.form.get('definition'),
     })
     return redirect(url_for('definition_list'))
+
+@app.route('/delete_term/<term_id>')
+def delete_term(term_id):
+    mongo.db.definitions.remove({'_id': ObjectId(term_id)})
+    return redirect(url_for('definition_list'))
     
 if __name__ == '__main__':
    app.run(host=os.environ.get('IP'),
