@@ -1,0 +1,29 @@
+{% extends 'base.html'%} {% block content %}
+<h4 class="center">Edit or Delete a definition below!</h4>
+<div class="block-divider"></div>
+<div class="container">
+    <ul class="collapsible" data-collapsible="accordion">
+        {% for term in terms %}
+        <li>
+            <div class="collapsible-header">
+                <div class="">
+                    <a href="" class="btn waves-effect waves-light btn-edit">Del</a>
+
+                    <a href="" class="btn waves-effect waves-light btn-edit">Edit</a>
+                </div>
+                <div class="term_header">
+                    <span class="bold">{{term.name}}</span>
+                </div>
+                <i class="material-icons">expand_more</i>
+            </div>
+            <div class="collapsible-body">
+                <span>
+                    {{term.definition}}
+                </span>
+            </div>
+        </li>
+        {% endfor %}
+
+    </ul>
+</div>
+{% endblock %}
