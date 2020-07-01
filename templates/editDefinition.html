@@ -1,0 +1,39 @@
+{% extends 'base.html'%} {% block content %}
+
+<h4 class="center">Editing Definitions</h4>
+<div class="block-divider"></div>
+<div class="container">
+    <form action="{{ url_for('update_definition', term_id=term._id) }}" method="POST" class="form">
+        <div class="row">
+            <div class="input-field">
+                <select id="category" name="category_name">
+                  <option value="" disabled selected>Choose Category</option>
+                  {% for cat in categories %}
+                      {% if cat.category_name == term.category_name%}
+                      <option value="{{cat.category_name}}" selected >{{cat.category_name}}</option>
+                      {% else %}
+                       <option value="{{cat.category_name}}">{{cat.category_name}}</option>
+                    {% endif %}
+                  {% endfor %}
+                </select>
+                <label>Definition Category</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <input id="name" name="name" type="text" class="validate" value="{{term.name}}">
+                <label for="name">Term</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <textarea name="definition" id="definition" class="materialize-textarea">{{term.definition}}</textarea>
+                <label for="definition">Term Definition</label>
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn waves-effect waves-light btn-red" type="submit">Update Definition</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
