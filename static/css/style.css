@@ -72,6 +72,25 @@
     justify-content: center;
 }
 
+.btn-edit:hover,
 .btn-red:hover {
     background-color: #8b0000;
+}
+
+.term_header {
+    padding-left: 20px;
+}
+
+.btn-edit {
+    font-family: "f1Font";
+    background-color: #FF0000;
+    justify-content: center;
+    width: 65px;
+}
+
+@media (max-width: 400px) {
+    .btn-edit {
+        display: block;
+        margin-top: 5px;
+    }
 }
