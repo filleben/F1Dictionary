@@ -2,7 +2,7 @@
     <h4 class="center">Add a definition below!</h4>
     <div class="block-divider"></div>
     <div class="container">
-        <form action="{{url_for('insert_definition')}}" method="POST">
+        <form action="{{url_for('insert_definition')}}" method="POST" class="form">
             <div class="row">
                 <div class="input-field">
                     <select id="category" name="category_name">
@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="row">
-                <button class="btn waves-effect waves-light" type="submit">Add Definition</button>
+                <button class="btn waves-effect waves-light btn-red" type="submit">Add Definition</button>
             </div>
         </form>
     </div>
