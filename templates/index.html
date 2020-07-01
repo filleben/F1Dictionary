@@ -1,0 +1,36 @@
+{% extends 'base.html'%} {% block content %}
+<h4 class="center">Looking for a definition? Take a look below!</h4>
+    <div class="block-divider"></div>
+    <div class="container">
+        <ul class="collapsible popout">
+            <li>
+                <div class="collapsible-header center">A-F</div>
+                {% for term in A_F %}
+                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span>: {{term.definition}}</span></div>
+                {% endfor %}
+            </li>
+            <div class="block-divider"></div>
+            <li>
+                <div class="collapsible-header center">G-L</div>
+                {% for term in G_L %}
+                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span>: {{term.definition}}</span></div>
+                {% endfor %}
+            </li>
+            <div class="block-divider"></div>
+            <li>
+                <div class="collapsible-header center">M-R</div>
+                {% for term in M_R %}
+                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span>: {{term.definition}}</span></div>
+                {% endfor %}
+            </li>
+            <div class="block-divider"></div>
+            <li>
+                <div class="collapsible-header center">S-Z</div>
+                {% for term in S_Z %}
+                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span>: {{term.definition}}</span></div>
+                {% endfor %}
+            </li>
+            <div class="block-divider"></div>
+        </ul>
+    </div>
+    {% endblock %}
