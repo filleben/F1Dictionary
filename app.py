@@ -34,6 +34,23 @@ def insert_definition():
 @app.route('/definition_list')
 def definition_list():
     return render_template('definitionList.html', terms=mongo.db.definitions.find())
+
+@app.route('/edit_definition/<term_id>')
+def edit_definition(term_id):
+    the_definition =  mongo.db.definitions.find_one({"_id": ObjectId(term_id)})
+    all_categories =  mongo.db.categories.find()
+    return render_template('editDefinition.html', term=the_definition, categories=all_categories)
+
+@app.route('/update_definition/<term_id>', methods=["POST"])
+def update_definition(term_id):
+    definitions = mongo.db.definitions
+    definitions.update( {'_id': ObjectId(term_id)},
+    {
+        'category_name':request.form.get('category_name'),
+        'name': request.form.get('name'),
+        'definition': request.form.get('definition'),
+    })
+    return redirect(url_for('definition_list'))
     
 if __name__ == '__main__':
    app.run(host=os.environ.get('IP'),
