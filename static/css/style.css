@@ -21,7 +21,7 @@
     background-color: #FF0000;
     margin: auto;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .navbar {
@@ -35,7 +35,7 @@
     width: 200px;
 }
 
-.sidenav li > a {
+.sidenav li>a {
     color: #ffffff;
 }
 
