@@ -37,3 +37,31 @@
 .bold {
     font-family: "f1FontBold";
 }
+
+.form {
+    font-family: "f1Font";
+}
+
+/*------Materialize Form customization taken from https://stackoverflow.com/questions/37127123/change-color-of-underline-input-and-label-in-materialize-css-framework-*/
+.input-field input[type]:not([readonly]),
+.input-field input[type]:focus:not([readonly]),
+.input-field textarea:not([readonly]),
+.input-field textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #FF0000;
+    box-shadow: 0 1px 0 0 #FF0000;
+}
+
+.input-field input[type]:focus:not([readonly])+label,
+.input-field textarea:focus:not([readonly])+label {
+    color: #FF0000;
+}
+
+.btn-red {
+    font-family: "f1Font";
+    background-color: #FF0000;
+    justify-content: center;
+}
+
+.btn-red:hover {
+    background-color: #8b0000;
+}
