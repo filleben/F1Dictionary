@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
-    <link rel="icon" href="{{url_for('static', filename='favicon.ico')}}">
-    <title>F1 Dictionary</title>
-</head>
-{% include 'header.html' %}
-
-
-{% block content %}
-{% endblock %}
-
-<body>
+{% extends 'base.html'%} {% block content %}
     <h4 class="center">Add a definition below!</h4>
     <div class="block-divider"></div>
     <div class="container">
@@ -48,9 +31,4 @@
             </div>
         </form>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
-</body>
-</html>
+{% endblock %}
