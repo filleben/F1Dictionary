@@ -29,6 +29,16 @@
     background-color: #FF0000;
 }
 
+.mobile-nav {
+    font-family: "f1Font";
+    background-color: #FF0000;
+    width: 200px;
+}
+
+.sidenav li > a {
+    color: #ffffff;
+}
+
 .title {
     font-family: "f1Font";
     color: #000000;
