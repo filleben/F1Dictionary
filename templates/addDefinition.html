@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
+    <link rel="icon" href="{{url_for('static', filename='favicon.ico')}}">
+    <title>F1 Dictionary</title>
+</head>
+{% include 'header.html' %}
+
+
+{% block content %}
+{% endblock %}
+
+<body>
+    <h4 class="center">Add a definition below!</h4>
+    <div class="block-divider"></div>
+    <div class="container">
+        <form action="{{url_for('insert_definition')}}" method="POST">
+            <div class="row">
+                <div class="input-field">
+                    <select id="category" name="category_name">
+                        <option value="" disabled selected>Choose Category</option>
+                        {% for category in categories %}
+                        <option value="{{category.category_name}}">{{category.category_name}}</option>
+                        {% endfor %}
+                    </select>
+                    <label>Definition Category</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <input id="name" name="name" type="text" class="validate">
+                    <label for="name">Term</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <textarea id="definition" name="definition" class="materialize-textarea"></textarea>
+                    <label for="definition">Term Definition</label>
+                </div>
+            </div>
+            <div class="row">
+                <button class="btn waves-effect waves-light" type="submit">Add Definition</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
+</body>
+</html>
