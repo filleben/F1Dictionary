@@ -1,17 +1,23 @@
 <header class="header-border">
-    <nav>
-        <div class="nav-wrapper navbar">
-          <a href="{{url_for('display_definitions')}}" class="brand-logo"><img src="https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg" alt="F1 Logo"></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="{{url_for('display_definitions')}}">Home</a></li>
-            <li><a href="{{url_for('add_definition')}}">Add Definition</a></li>
-            <li><a href="">Edit Definition</a></li>
-          </ul>
-        </div>
-      </nav>
-    <div class="container">
-        <div class="row">
-            <h1 class="center title">F1 Dictionary</h1>
-        </div>
+  <nav>
+    <div class="nav-wrapper navbar">
+      <a href="{{url_for('display_definitions')}}" class="brand-logo"><img src="https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg" alt="F1 Logo"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="{{url_for('display_definitions')}}">Home</a></li>
+        <li><a href="{{url_for('add_definition')}}">Add Definition</a></li>
+        <li><a href="">Edit Definition</a></li>
+      </ul>
     </div>
+  </nav>
+  <ul class="sidenav mobile-nav" id="mobile-demo">
+    <li><a href="{{url_for('display_definitions')}}">Home</a></li>
+    <li><a href="{{url_for('add_definition')}}">Add Definition</a></li>
+    <li><a href="">Edit Definition</a></li>
+  </ul>
+  <div class="container">
+    <div class="row">
+      <h1 class="center title">F1 Dictionary</h1>
+    </div>
+  </div>
 </header>
