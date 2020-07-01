@@ -18,19 +18,33 @@
     <div class="container">
         <ul class="collapsible popout">
             <li>
-                <div class="collapsible-header center">First</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                <div class="collapsible-header center">A-F</div>
+                {% for term in A_F %}
+                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span>: {{term.definition}}</span></div>
+                {% endfor %}
             </li>
             <div class="block-divider"></div>
             <li>
-                <div class="collapsible-header center">Second</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                <div class="collapsible-header center">G-L</div>
+                {% for term in G_L %}
+                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span>: {{term.definition}}</span></div>
+                {% endfor %}
             </li>
             <div class="block-divider"></div>
             <li>
-                <div class="collapsible-header center">Third</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                <div class="collapsible-header center">M-R</div>
+                {% for term in M_R %}
+                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span>: {{term.definition}}</span></div>
+                {% endfor %}
             </li>
+            <div class="block-divider"></div>
+            <li>
+                <div class="collapsible-header center">S-Z</div>
+                {% for term in S_Z %}
+                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span>: {{term.definition}}</span></div>
+                {% endfor %}
+            </li>
+            <div class="block-divider"></div>
         </ul>
     </div>
 
