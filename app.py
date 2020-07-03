@@ -94,7 +94,7 @@ def login():
             return redirect(url_for('login'))
     return render_template('login.html', form=form, title='Login')
 
-@app.route('/register')
+@app.route('/register', methods=['GET', 'POST'])
 def register():
     if 'logged_in' in session:
         return redirect(url_for('display_definitions'))
