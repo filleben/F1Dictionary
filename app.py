@@ -56,8 +56,12 @@ def update_definition(term_id):
 def delete_term(term_id):
     mongo.db.definitions.remove({'_id': ObjectId(term_id)})
     return redirect(url_for('definition_list'))
-    
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
 if __name__ == '__main__':
-   app.run(host=os.environ.get('IP'),
+    app.run(host=os.environ.get('IP'),
            port=int(os.environ.get('PORT')),
            debug=True)
