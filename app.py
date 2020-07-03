@@ -76,7 +76,7 @@ def delete_term(term_id):
     mongo.db.definitions.remove({'_id': ObjectId(term_id)})
     return redirect(url_for('definition_list'))
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
     if 'logged_in' in session:
         return redirect(url_for('display_definitions'))
