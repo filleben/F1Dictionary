@@ -11,6 +11,11 @@ from os import path
 if path.exists("env.py"):
   import env 
 
+CSRF = CSRFProtect()
+
+def create_app():
+    CSRF.init_app(app)
+
 app = Flask(__name__)
 app.config["MONGO_DBNAME"] = "f1_dictionary"
 app.config["MONGO_URI"] = os.environ.get('MONGO_URI', 'mongodb://localhost')
