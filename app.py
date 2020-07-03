@@ -78,7 +78,21 @@ def delete_term(term_id):
 
 @app.route('/login')
 def login():
-    return render_template('login.html')
+    if 'logged_in' in session:
+        return redirect(url_for('display_definitions'))
+
+    form = LoginForm()
+    if form.validate_on_submit():
+        user = mongo.db.users
+        logged_in_user = user.find_one({'name': request.form['username'].title()})
+
+        if logged_in_user:
+            if check_password_hash(logged_in_user['pass'], request.form['password']): 
+                session['username'] = request.form['username']
+                session['logged_in'] = True
+                return redirect(url_for('display_definitions'))
+            return redirect(url_for('login'))
+    return render_template('login.html', form=form, title='Login')
 
 @app.route('/register')
 def register():
