@@ -105,7 +105,7 @@ def register():
         user = mongo.db.users
         duplicate_user = user.find_one({'name': request.form['username'].title()})
 
-        if dup_user is None:
+        if duplicate_user is None:
             hash_pass = generate_password_hash(request.form['password'])
             user.insert_one({'name': request.form['username'].title(), 'pass': hash_pass})
             session['username'] = request.form['username']
