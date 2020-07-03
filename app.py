@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, redirect, request, url_for
+from flask import Flask, render_template, redirect, request, url_for, session
 from flask_wtf import FlaskForm
 from flask_wtf.csrf import CSRFProtect
 from wtforms import StringField, TextAreaField, IntegerField, PasswordField
@@ -22,6 +22,14 @@ app.config["MONGO_DBNAME"] = "f1_dictionary"
 app.config["MONGO_URI"] = os.environ.get('MONGO_URI', 'mongodb://localhost')
 
 mongo = PyMongo(app)
+
+class LoginForm(FlaskForm):
+    username = StringField('Username', validators=[DataRequired()])
+    password = PasswordField('Password', validators=[DataRequired()])
+
+class RegistrationForm(FlaskForm):
+    username = StringField('Username', validators=[DataRequired()])
+    password = PasswordField('Password', validators=[DataRequired()])
 
 @app.route('/')
 @app.route('/display_definitions')
