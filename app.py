@@ -115,6 +115,11 @@ def register():
         return redirect(url_for('display_definitions'))
     return render_template('register.html', form=form, title="Register")
 
+@app.route('/logout')
+def logout():
+    session.clear() 
+    return redirect(url_for('display_definitions'))
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
            port=int(os.environ.get('PORT')),
