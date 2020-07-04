@@ -3,6 +3,9 @@
 <div class="block-divider"></div>
 <div class="container">
     <form action="{{ url_for('register')}}" method="POST" class="font">
+        {{ form.csrf_token }} {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+        <p class="center">{{ message }}</p>
+        {% endfor %} {% endif %} {% endwith %}
         <div class="row input-field">
             {{ form.hidden_tag() }} {{ form.username(class_='font', required=true, placeholder="Enter Username") }}
         </div>
