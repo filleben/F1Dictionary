@@ -112,7 +112,8 @@ def register():
             session['logged_in'] = True
             return redirect(url_for('display_definitions'))
 
-        return redirect(url_for('display_definitions'))
+        flash('This username is already taken. Please try another.')
+        return redirect(url_for('register'))
     return render_template('register.html', form=form, title="Register")
 
 @app.route('/logout')
