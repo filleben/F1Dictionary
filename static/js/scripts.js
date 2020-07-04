@@ -1,11 +1,5 @@
-$(document).ready(function(){
+$(document).ready(function () {
   $('.sidenav').sidenav();
+  $('.collapsible').collapsible();
+  $('select').formSelect();
 });
-
-$(document).ready(function(){
-    $('.collapsible').collapsible();
-  });
-
-$(document).ready(function(){
-    $('select').formSelect();
-  });
