@@ -8,7 +8,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from os import path
-if path.exists("env.py"):
+if os.path.exists("env.py"):
   import env 
 
 CSRF = CSRFProtect()
@@ -17,9 +17,9 @@ def create_app():
     CSRF.init_app(app)
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
+app.config['SECRET_KEY'] = os.getenv("SECRET_KEY")
 app.config["MONGO_DBNAME"] = "f1_dictionary"
-app.config["MONGO_URI"] = os.environ.get('MONGO_URI', 'mongodb://localhost')
+app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
 
 mongo = PyMongo(app)
 
