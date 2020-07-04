@@ -5,6 +5,7 @@
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         {% if 'username' in session %}
+        <li><span class="welcome-message">Welcome {{ session['username'].title() }}</span></li>
         <li><a href="{{url_for('display_definitions')}}">Home</a></li>
         <li><a href="{{url_for('add_definition')}}">Add Definition</a></li>
         <li><a href="{{url_for('definition_list')}}">Edit Definition</a></li>
@@ -18,6 +19,7 @@
   </nav>
   <ul class="sidenav mobile-nav" id="mobile-demo">
     {% if 'username' in session %}
+    <li><span class="welcome-message-mbl">Welcome {{ session['username'].title() }}</span></li>
     <li><a href="{{url_for('display_definitions')}}">Home</a></li>
     <li><a href="{{url_for('add_definition')}}">Add Definition</a></li>
     <li><a href="{{url_for('definition_list')}}">Edit Definition</a></li>
