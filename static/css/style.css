@@ -104,10 +104,11 @@
     padding-right: 12px;
 }
 
-.welcome-message-mbl{
+.welcome-message-mbl {
     color: #ffffff;
     padding-left: 31px;
 }
+
 @media (max-width: 400px) {
     .btn-edit {
         display: block;

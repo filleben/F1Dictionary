@@ -3,7 +3,8 @@
 <div class="block-divider"></div>
 <div class="container">
     <form action="{{ url_for('login')}}" method="POST" class="font">
-        {{ form.csrf_token }} {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+        {{ form.csrf_token }} {% with messages = get_flashed_messages() %} {% if messages %}
+        {% for message in messages %}
         <p class="center">{{ message }}</p>
         {% endfor %} {% endif %} {% endwith %}
         <div class="row input-field">
@@ -17,7 +18,8 @@
         </div>
     </form>
     <div class="row">
-        <h5 class="center">Don't have an account? <a href="{{url_for('register')}}" class="btn waves-effect waves-light btn-red">Sign up</a></h5>
+        <h5 class="center">Don't have an account? <a href="{{url_for('register')}}"
+                class="btn waves-effect waves-light btn-red">Sign up</a></h5>
     </div>
 </div>
 {% endblock %}

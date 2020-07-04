@@ -1,38 +1,38 @@
 {% extends 'base.html'%} {% block content %}
 {% if 'username' in session %}
-    <h4 class="center">Add a definition below!</h4>
-    <div class="block-divider"></div>
-    <div class="container">
-        <form action="{{url_for('insert_definition')}}" method="POST" class="font">
-            <div class="row">
-                <div class="input-field">
-                    <select id="category" name="category_name">
-                        <option value="" disabled selected>Choose Category</option>
-                        {% for category in categories %}
-                        <option value="{{category.category_name}}">{{category.category_name}}</option>
-                        {% endfor %}
-                    </select>
-                    <label>Definition Category</label>
-                </div>
+<h4 class="center">Add a definition below!</h4>
+<div class="block-divider"></div>
+<div class="container">
+    <form action="{{url_for('insert_definition')}}" method="POST" class="font">
+        <div class="row">
+            <div class="input-field">
+                <select id="category" name="category_name">
+                    <option value="" disabled selected>Choose Category</option>
+                    {% for category in categories %}
+                    <option value="{{category.category_name}}">{{category.category_name}}</option>
+                    {% endfor %}
+                </select>
+                <label>Definition Category</label>
             </div>
-            <div class="row">
-                <div class="input-field">
-                    <input id="name" name="name" type="text" class="validate font">
-                    <label for="name">Term</label>
-                </div>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <input id="name" name="name" type="text" class="validate font">
+                <label for="name">Term</label>
             </div>
-            <div class="row">
-                <div class="input-field">
-                    <textarea id="definition" name="definition" class="materialize-textarea font"></textarea>
-                    <label for="definition">Term Definition</label>
-                </div>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <textarea id="definition" name="definition" class="materialize-textarea font"></textarea>
+                <label for="definition">Term Definition</label>
             </div>
-            <div class="row">
-                <button class="btn waves-effect waves-light btn-red" type="submit">Add Definition</button>
-            </div>
-        </form>
-    </div>
-    {% else %}
-    <h4 class="center">You Need to be logged in to view this page!</h4>
-    {% endif %}
-    {% endblock %}
+        </div>
+        <div class="row">
+            <button class="btn waves-effect waves-light btn-red" type="submit">Add Definition</button>
+        </div>
+    </form>
+</div>
+{% else %}
+<h4 class="center">You Need to be logged in to view this page!</h4>
+{% endif %}
+{% endblock %}
