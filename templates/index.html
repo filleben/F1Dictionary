@@ -1,33 +1,33 @@
 {% extends 'base.html'%} {% block content %}
 <h4 class="center">Looking for a definition? Take a look below!</h4>
-    <div class="block-divider"></div>
+<div class="block-divider"></div>
     <div class="container">
         <ul class="collapsible popout">
             <li>
-                <div class="collapsible-header center">A-F</div>
+                <div class="collapsible-header center bold">A-F</div>
                 {% for term in A_F %}
-                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span>: {{term.definition}}</span></div>
+                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span class="font">: {{term.definition}}</span></div>
                 {% endfor %}
             </li>
             <div class="block-divider"></div>
             <li>
-                <div class="collapsible-header center">G-L</div>
+                <div class="collapsible-header center bold">G-L</div>
                 {% for term in G_L %}
-                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span>: {{term.definition}}</span></div>
+                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span class="font">: {{term.definition}}</span></div>
                 {% endfor %}
             </li>
             <div class="block-divider"></div>
             <li>
-                <div class="collapsible-header center">M-R</div>
+                <div class="collapsible-header center bold">M-R</div>
                 {% for term in M_R %}
-                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span>: {{term.definition}}</span></div>
+                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span class="font">: {{term.definition}}</span></div>
                 {% endfor %}
             </li>
             <div class="block-divider"></div>
             <li>
-                <div class="collapsible-header center">S-Z</div>
+                <div class="collapsible-header center bold">S-Z</div>
                 {% for term in S_Z %}
-                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span>: {{term.definition}}</span></div>
+                <div class="collapsible-body"><span class="bold">{{term.name}}</span><span class="font">: {{term.definition}}</span></div>
                 {% endfor %}
             </li>
             <div class="block-divider"></div>
