@@ -1,4 +1,5 @@
 {% extends 'base.html'%} {% block content %}
+{% if 'username' in session %}
     <h4 class="center">Add a definition below!</h4>
     <div class="block-divider"></div>
     <div class="container">
@@ -31,4 +32,7 @@
             </div>
         </form>
     </div>
-{% endblock %}
+    {% else %}
+    <h4 class="center">You Need to be logged in to view this page!</h4>
+    {% endif %}
+    {% endblock %}

@@ -1,4 +1,5 @@
 {% extends 'base.html'%} {% block content %}
+{% if 'username' in session %}
 <h4 class="center">Edit or Delete a definition below!</h4>
 <h5 class="center">WARNING: Deleting data can not be undone!</h5>
 <div class="block-divider"></div>
@@ -26,4 +27,7 @@
 
     </ul>
 </div>
+{% else %}
+<h4 class="center">You Need to be logged in to view this page!</h4>
+{% endif %}
 {% endblock %}
