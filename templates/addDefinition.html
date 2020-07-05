@@ -1,7 +1,13 @@
 {% extends 'base.html'%} {% block content %}
+
+<!-- Login Check-->
 {% if 'username' in session %}
+
+<!-- Page Title -->
 <h4 class="center font">Add a definition below!</h4>
 <div class="block-divider"></div>
+
+<!-- Insert Definition Form -->
 <div class="container">
     <form action="{{url_for('insert_definition')}}" method="POST" class="font">
         <div class="row">
@@ -32,7 +38,11 @@
         </div>
     </form>
 </div>
+
 {% else %}
+
+<!-- Message for users not logged in -->
 <h4 class="center font">You Need to be logged in to view this page!</h4>
+
 {% endif %}
 {% endblock %}

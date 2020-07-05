@@ -1,8 +1,14 @@
 {% extends 'base.html'%} {% block content %}
+
+<!-- Login Check-->
 {% if 'username' in session %}
+
+<!-- Page Title/Subtitle -->
 <h4 class="center font">Edit or Delete a definition below!</h4>
 <h5 class="center font">WARNING: Deleting data can not be undone!</h5>
 <div class="block-divider"></div>
+
+<!-- List of definitions Accordion-->
 <div class="container">
     <ul class="collapsible" data-collapsible="accordion">
         {% for term in terms %}
@@ -29,7 +35,11 @@
 
     </ul>
 </div>
+
 {% else %}
+
+<!-- Message for users not logged in -->
 <h4 class="center font">You Need to be logged in to view this page!</h4>
+
 {% endif %}
 {% endblock %}

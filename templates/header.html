@@ -1,17 +1,27 @@
+<!-- Header -->
 <header class="header-border">
+
+  <!-- Navbar -->
   <nav class="font">
     <div class="nav-wrapper navbar">
       <a href="{{url_for('display_definitions')}}" class="brand-logo"><img
           src="https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg" alt="F1 Logo"></a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+        <!-- Login Check-->
         {% if 'username' in session %}
+
+        <!-- Logged in user navbar -->
         <li><span class="welcome-message">Welcome {{ session['username'].title() }}</span></li>
         <li><a href="{{url_for('display_definitions')}}">Home</a></li>
         <li><a href="{{url_for('add_definition')}}">Add Definition</a></li>
         <li><a href="{{url_for('definition_list')}}">Edit Definition</a></li>
         <li><a href="{{url_for('logout')}}">Logout</a></li>
+
         {% else %}
+
+        <!-- Logged out user navbar -->
         <li><a href="{{url_for('display_definitions')}}">Home</a></li>
         <li><a href="{{url_for('login')}}">Login</a></li>
         <li><a href="{{url_for('register')}}">Register</a></li>
@@ -19,19 +29,30 @@
       </ul>
     </div>
   </nav>
+
+  <!-- Mobile Navbar-->
   <ul class="sidenav mobile-nav font" id="mobile-demo">
+
+    <!-- Login Check-->
     {% if 'username' in session %}
+
+    <!-- Logged in user navbar -->
     <li><span class="welcome-message-mbl">Welcome {{ session['username'].title() }}</span></li>
     <li><a href="{{url_for('display_definitions')}}">Home</a></li>
     <li><a href="{{url_for('add_definition')}}">Add Definition</a></li>
     <li><a href="{{url_for('definition_list')}}">Edit Definition</a></li>
     <li><a href="{{url_for('logout')}}">Logout</a></li>
+
     {% else %}
+
+    <!-- Logged out user navbar -->
     <li><a href="{{url_for('display_definitions')}}">Home</a></li>
     <li><a href="{{url_for('login')}}">Login</a></li>
     <li><a href="{{url_for('register')}}">Register</a></li>
     {% endif %}
   </ul>
+
+  <!-- Gobal page title -->
   <div class="container">
     <div class="row font">
       <h1 class="center title">F1 Dictionary</h1>
