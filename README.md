@@ -1,4 +1,4 @@
-# F1 Memory Game
+# F1 Dictionary
 
 ![Site Preview](...)
 
@@ -161,3 +161,42 @@ I used the following web browsers on both desktop (Windows) and mobile (Android)
   - Desktop Version: 44.18362.449.0
 
 The project was run through both [HTML Validation](https://validator.w3.org/) and [CSS Validation](https://jigsaw.w3.org/css-validator) with no errors found.
+
+### User Story Tests
+
+1. Site is simple and visually appealing:
+   - The feedback I have received so far indicates that this is true.
+
+2. Definitions sorted by categories:
+   1. Go to the "Home" page.
+   2. Four aphabetical categories are visible.
+   3. Click on one if the categories, the corrisponding definitions are now visible.
+  
+3. Update incorrect definitions:
+   1. Go to the "Home" page.
+   2. Click on "Login" to login to your account or click on "Register" to register an account.
+   3. Click on "Edit Definition".
+   4. Choose the term you wish to edit and click on the "Edit" button.
+   5. Make the disired changes.
+   6. Click on "Update Definitions".
+   7. Click on the term you updated to view the changes.
+
+4. Add definitions to the site:
+   1. Go to the "Home" page.
+   2. Click on "Login" to login to your account or click on "Register" to register an account.
+   3. Click on "Add Definition".
+   4. Enter the details.
+   5. Click on "Add Definition".
+   6. View new definition by clicking on the category you placed it in.
+
+5. Quickly find information:
+   1. Go to the "Home" page.
+   2. Click on the correct category for the term you are looking for.
+   3. View the terms.
+
+### All tests performed with no errors found.
+
+### Issues Found During Testing
+
+- It was possible to add term and definitions into the database without providing all the required data, this was fixed by adding "required" to the revlavent form elements.
+- Long usernames would not render correctly on the mobile navbar, this was fixed by adding "display: block" to the .welcome-message-mbl class.
