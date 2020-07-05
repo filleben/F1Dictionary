@@ -1,3 +1,4 @@
+/*------Fonts-*/
 @font-face {
     font-family: "f1Font";
     src: url("/static/fonts/Formula1-Regular.ttf") format("truetype");
@@ -8,11 +9,22 @@
     src: url("/static/fonts/Formula1-Bold.ttf") format("truetype");
 }
 
+/*------Gobal Rules-*/
 .center {
     text-align: center;
     justify-content: center;
 }
 
+.select-wrapper input.select-dropdown,
+.font {
+    font-family: "f1Font";
+}
+
+.bold {
+    font-family: "f1FontBold";
+}
+
+.btn-red,
 .btn-edit,
 .btn-edit,
 .mobile-nav,
@@ -21,6 +33,7 @@
     background-color: #FF0000;
 }
 
+/*------Block Divider-*/
 .block-divider {
     width: 125px;
     height: 10px;
@@ -28,6 +41,16 @@
     margin: auto;
     margin-top: 20px;
     margin-bottom: 40px;
+}
+
+/*------Navbar Styling-*/
+.welcome-message {
+    padding-right: 12px;
+}
+
+.welcome-message-mbl {
+    color: #ffffff;
+    padding-left: 31px;
 }
 
 .mobile-nav {
@@ -38,19 +61,12 @@
     color: #ffffff;
 }
 
+/*------Title Text Styling-*/
 .title {
     color: #000000;
 }
 
-.bold {
-    font-family: "f1FontBold";
-}
-
-.select-wrapper input.select-dropdown,
-.font {
-    font-family: "f1Font";
-}
-
+/*------Form Styling-*/
 /*------Materialize Form customization taken from https://stackoverflow.com/questions/37127123/change-color-of-underline-input-and-label-in-materialize-css-framework-*/
 .input-field input[type]:not([readonly]),
 .input-field input[type]:focus:not([readonly]),
@@ -74,6 +90,11 @@ ul.dropdown-content.select-dropdown li span {
     color: #000000; 
 }
 
+.term_header {
+    padding-left: 20px;
+}
+
+/*------Button Styling-*/
 .btn-red {
     justify-content: center;
 }
@@ -83,24 +104,12 @@ ul.dropdown-content.select-dropdown li span {
     background-color: #8b0000;
 }
 
-.term_header {
-    padding-left: 20px;
-}
-
 .btn-edit {
     justify-content: center;
     width: 65px;
 }
 
-.welcome-message {
-    padding-right: 12px;
-}
-
-.welcome-message-mbl {
-    color: #ffffff;
-    padding-left: 31px;
-}
-
+/*------Media Rules-*/
 @media (max-width: 400px) {
     .btn-edit {
         display: block;
