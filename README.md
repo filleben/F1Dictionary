@@ -73,6 +73,48 @@ The wireframes were made using [Balsamiq](https://balsamiq.cloud)
 - Add a undo button in the event of accidental data deletion by the user.
 - Futher user authentication, users only allowed to change data they have entered themsleves into the database.
 
+<span id="technologies"></span>
+
+## Technologies Used
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+  - The project uses **HTML5** to provide the content and structure.
+
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+  - The project uses **CSS3** for styling.
+
+- [jQuery](https://jquery.com)
+  - The project uses **jQuery** for interactive elements.
+
+- [Python](https://www.python.org/)
+  - The project uses **Python** to run the application.
+
+- [Materialize](https://materializecss.com/)
+  - The project uses **Materialize** for layout, responsiveness and elements.
+
+- [Material Icons](https://materializecss.com/)
+  - The project uses **Material Icons** for icons.
+
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/quickstart/)
+  - The project uses **Flask** as the framework.
+
+- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+  - The project uses **Jinja** as the templating langauge.
+
+- [MongoDB](https://cloud.mongodb.com)
+  - The project uses **MongoDB** to host the database.
+
+- [VSCode](https://code.visualstudio.com/)
+  - The project developed in  **Visual Studio Code**.
+
+- [Git](https://git-scm.com/)
+  - The project uses **Git** for version control.
+
+- [GitHub](https://github.com/)
+  - The project uses **GitHub** to host the repository.
+
+- [Heroku](www.heroku.com)
+  - The project is hosted on **Heroku**.
 
 <span id="testing"></span>
 
