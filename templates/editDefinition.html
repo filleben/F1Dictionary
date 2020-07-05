@@ -1,6 +1,6 @@
 {% extends 'base.html'%} {% block content %}
 {% if 'username' in session %}
-<h4 class="center">Editing Definitions</h4>
+<h4 class="center font">Editing Definitions</h4>
 <div class="block-divider"></div>
 <div class="container">
     <form action="{{ url_for('update_definition', term_id=term._id) }}" method="POST">
@@ -33,11 +33,11 @@
             </div>
         </div>
         <div class="row">
-            <button class="btn waves-effect waves-light btn-red" type="submit">Update Definition</button>
+            <button class="btn waves-effect waves-light btn-red font" type="submit">Update Definition</button>
         </div>
     </form>
 </div>
 {% else %}
-<h4 class="center">You Need to be logged in to view this page!</h4>
+<h4 class="center font">You Need to be logged in to view this page!</h4>
 {% endif %}
 {% endblock %}

@@ -1,5 +1,5 @@
 {% extends 'base.html'%} {% block content %}
-<h4 class="center">Register an account</h4>
+<h4 class="center font">Register an account</h4>
 <div class="block-divider"></div>
 <div class="container">
     <form action="{{ url_for('register')}}" method="POST" class="font">
@@ -14,12 +14,12 @@
             {{ form.password(class_='font', required=true, placeholder="Enter Password") }}
         </div>
         <div class="row">
-            <button class="btn waves-effect waves-light btn-red" type="submit">Register</button>
+            <button class="btn waves-effect waves-light btn-red font" type="submit">Register</button>
         </div>
     </form>
     <div class="row">
-        <h5 class="center">Already have an account? <a href="{{url_for('login')}}"
-                class="btn waves-effect waves-light btn-red">Login</a></h5>
+        <h5 class="center font">Already have an account? <a href="{{url_for('login')}}"
+                class="btn waves-effect waves-light btn-red font">Login</a></h5>
     </div>
 </div>
 {% endblock %}

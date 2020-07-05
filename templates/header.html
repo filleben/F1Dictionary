@@ -1,5 +1,5 @@
 <header class="header-border">
-  <nav>
+  <nav class="font">
     <div class="nav-wrapper navbar">
       <a href="{{url_for('display_definitions')}}" class="brand-logo"><img
           src="https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg" alt="F1 Logo"></a>
@@ -19,7 +19,7 @@
       </ul>
     </div>
   </nav>
-  <ul class="sidenav mobile-nav" id="mobile-demo">
+  <ul class="sidenav mobile-nav font" id="mobile-demo">
     {% if 'username' in session %}
     <li><span class="welcome-message-mbl">Welcome {{ session['username'].title() }}</span></li>
     <li><a href="{{url_for('display_definitions')}}">Home</a></li>
@@ -33,7 +33,7 @@
     {% endif %}
   </ul>
   <div class="container">
-    <div class="row">
+    <div class="row font">
       <h1 class="center title">F1 Dictionary</h1>
     </div>
   </div>
