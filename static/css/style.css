@@ -9,29 +9,28 @@
 }
 
 .center {
-    font-family: "f1Font";
     text-align: center;
     justify-content: center;
+}
+
+.btn-edit,
+.btn-edit,
+.mobile-nav,
+.navbar,
+.block-divider {
+    background-color: #FF0000;
 }
 
 .block-divider {
     width: 125px;
     height: 10px;
     border: 0;
-    background-color: #FF0000;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 40px;
 }
 
-.navbar {
-    font-family: "f1Font";
-    background-color: #FF0000;
-}
-
 .mobile-nav {
-    font-family: "f1Font";
-    background-color: #FF0000;
     width: 200px;
 }
 
@@ -40,7 +39,6 @@
 }
 
 .title {
-    font-family: "f1Font";
     color: #000000;
 }
 
@@ -48,6 +46,7 @@
     font-family: "f1FontBold";
 }
 
+.select-wrapper input.select-dropdown,
 .font {
     font-family: "f1Font";
 }
@@ -67,23 +66,18 @@
 }
 
 .select-wrapper input.select-dropdown {
-    font-family: "f1Font";
     border-bottom: 1px solid #FF0000;
     box-shadow: 0 1px 0 0 #FF0000;
 }
 
+ul.dropdown-content.select-dropdown li span {
+    color: #000000; 
+}
+
 .btn-red {
-    font-family: "f1Font";
-    background-color: #FF0000;
     justify-content: center;
 }
 
-.btn-search {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.btn-search:hover,
 .btn-edit:hover,
 .btn-red:hover {
     background-color: #8b0000;
@@ -94,8 +88,6 @@
 }
 
 .btn-edit {
-    font-family: "f1Font";
-    background-color: #FF0000;
     justify-content: center;
     width: 65px;
 }
@@ -113,9 +105,5 @@
     .btn-edit {
         display: block;
         margin-top: 5px;
-    }
-
-    .btn-search {
-        display: block;
     }
 }
