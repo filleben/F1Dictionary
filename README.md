@@ -53,6 +53,27 @@ The wireframes were made using [Balsamiq](https://balsamiq.cloud)
 
 - **Colours**: I wanted the project to look like a product from Formula One so with this in mind I used the same colour scheme used on the [Official Site](https://www.formula1.com/). I used white (Hex: '#ffffff' RGB: 'rgb(255, 255, 255)') as the background and navbar font colour, red (Hex: '#ff0000' RGB: 'rgb(255, 0, 0)') for the navbar and block-divder elements and then black (Hex: '#000000' RGB: 'rgb(0, 0, 0)') for the body text.
 
+<span id="features"></span>
+
+## Features
+
+- **Navigation bar**: Allows the user to navigate to all the pages of the site, consistent throughout the site. Links in the navbar change depending on if the user is logged in or not.
+- **User Registration and Authenication**: Users have to make a account and be logged into the site in order to unlock the ability to add, edit and delete definitions.
+- **Definitons Grouped by Category**: Home page displays all the different categories of definition which can be expanded on click to reveal the records in that category.
+- **Add Definition**: Logged in users and add definitions to the database.
+- **Edit Definitions**: Logged in users can edit existing definitions in the database and update them.
+- **Delete Definitions**: Logged in users can delete definitions from the database.
+- **Login Checks**: CRUD pages will only be viewable if a user is logged in.
+- **404 Page**: Provides users with a message if they have entered a incorrect URL or clicked a incorrect link, gives the user the option to return to the home page.
+
+
+### Features Left to Implement
+
+- Search bar on the home page allowing users to simply search for a definition instead of manually finding it.
+- Add a undo button in the event of accidental data deletion by the user.
+- Futher user authentication, users only allowed to change data they have entered themsleves into the database.
+
+
 <span id="testing"></span>
 
 ## Testing
