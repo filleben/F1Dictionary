@@ -93,8 +93,8 @@ def login():
                 session['logged_in'] = True
                 return redirect(url_for('display_definitions'))
 
-            flash('Invalid credentials')
-            return redirect(url_for('login'))
+        flash('Invalid credentials')
+        return redirect(url_for('login'))
     return render_template('login.html', form=form, title='Login')
 
 @app.route('/register', methods=['GET', 'POST'])
