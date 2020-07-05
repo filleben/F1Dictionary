@@ -12,7 +12,7 @@
     <form action="{{ url_for('update_definition', term_id=term._id) }}" method="POST">
         <div class="row font">
             <div class="input-field">
-                <select id="category" name="category_name">
+                <select id="category" name="category_name" required>
                     <option value="" disabled selected>Choose Category</option>
                     {% for cat in categories %}
                     {% if cat.category_name == term.category_name%}
@@ -27,14 +27,14 @@
         </div>
         <div class="row">
             <div class="input-field font">
-                <input id="name" name="name" type="text" class="validate font" value="{{term.name}}">
+                <input id="name" name="name" type="text" class="validate font" value="{{term.name}}" required>
                 <label for="name">Term</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field font">
                 <textarea name="definition" id="definition"
-                    class="materialize-textarea font">{{term.definition}}</textarea>
+                    class="materialize-textarea font" required>{{term.definition}}</textarea>
                 <label for="definition">Term Definition</label>
             </div>
         </div>
