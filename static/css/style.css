@@ -49,8 +49,10 @@
 }
 
 .welcome-message-mbl {
+    line-height: 25px;
     color: #ffffff;
     padding-left: 31px;
+    display: block;
 }
 
 .mobile-nav {
