@@ -47,6 +47,12 @@ I expect that the majority of the users will fall into the following criteria:
 
 The wireframes were made using [Balsamiq](https://balsamiq.cloud)
 
+I made some changes from the initial wireframe design:
+
+  - Navbar now includes the logo with the links right aligned.
+  - Instead of having indevidual category pages, terms and definitions are displayed in a accordian.
+  - I made a page containing all the terms and definitions in the database with edit and delete buttons.
+
 ### Design Choices
 
 - **Font**: I wanted the project to look as professional as possible so decided to use a copy of the official Formula One font sourced from [Here](https://www.ffonts.net/Formula1-Display-Regular.font.download).
