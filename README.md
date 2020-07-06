@@ -10,7 +10,7 @@
 
 ---
 
-Formula One is a very techinal sport full of complicated and unusual terms for both new and seasoned fans, which are used frequetly on both social media and during race boardcasts. The goal of this project is to make a application that can display these terms with their associated definition, to hopefully increase the knowledge and understanding of fans. The project will allow users to add terms and defitions into the database, update and delete definations.
+Formula One is a very technical sport full of complicated and unusual terms for both new and seasoned fans, which are used frequently on both social media and during race broadcasts. The goal of this project is to make an application that can display these terms with their associated definition, to hopefully increase the knowledge and understanding of fans. The project will allow users to add terms and definitions into the database, update and delete definitions.
 
 ## Table of Contents
 
@@ -36,7 +36,7 @@ I expect that the majority of the users will fall into the following criteria:
 ### User Stories
 
 - As a user, I want the site to be simple to use and visually appealing.
-- As a user, I want the the definitions to be sorted in categories.
+- As a user, I want the definitions to be sorted in categories.
 - As a user, I want to be able to update any incorrect definitions.
 - As a user, I want to be able to add more definitions to the site.
 - As a user, I want to be able to quickly find the information I am looking for.
@@ -50,7 +50,7 @@ The wireframes were made using [Balsamiq](https://balsamiq.cloud)
 I made some changes from the initial wireframe design:
 
   - Navbar now includes the logo with the links right aligned.
-  - Instead of having indevidual category pages, terms and definitions are displayed in a accordian.
+  - Instead of having individual category pages, terms and definitions are displayed in an accordion.
   - I made a page containing all the terms and definitions in the database with edit and delete buttons.
 
 ### Design Choices
@@ -64,20 +64,20 @@ I made some changes from the initial wireframe design:
 ## Features
 
 - **Navigation bar**: Allows the user to navigate to all the pages of the site, consistent throughout the site. Links in the navbar change depending on if the user is logged in or not.
-- **User Registration and Authenication**: Users have to make a account and be logged into the site in order to unlock the ability to add, edit and delete definitions.
-- **Definitons Grouped by Category**: Home page displays all the different categories of definition which can be expanded on click to reveal the records in that category.
+- **User Registration and Authentication**: Users have to make an account and be logged into the site in order to unlock the ability to add, edit and delete definitions.
+- **Definitions Grouped by Category**: Home page displays all the different categories of definition which can be expanded on click to reveal the records in that category.
 - **Add Definition**: Logged in users and add definitions to the database.
 - **Edit Definitions**: Logged in users can edit existing definitions in the database and update them.
 - **Delete Definitions**: Logged in users can delete definitions from the database.
 - **Login Checks**: CRUD pages will only be viewable if a user is logged in.
-- **404 Page**: Provides users with a message if they have entered a incorrect URL or clicked a incorrect link, gives the user the option to return to the home page.
+- **404 Page**: Provides users with a message if they have entered an incorrect URL or clicked an incorrect link, gives the user the option to return to the home page.
 
 
 ### Features Left to Implement
 
-- Search bar on the home page allowing users to simply search for a definition instead of manually finding it.
+- A search bar on the home page allowing users to simply search for a definition instead of manually finding it.
 - Add a undo button in the event of accidental data deletion by the user.
-- Futher user authentication, users only allowed to change data they have entered themsleves into the database.
+- Further user authentication, users only allowed to change data they have entered themselves into the database.
 
 <span id="technologies"></span>
 
@@ -105,7 +105,7 @@ I made some changes from the initial wireframe design:
   - The project uses **Flask** as the framework.
 
 - [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
-  - The project uses **Jinja** as the templating langauge.
+  - The project uses **Jinja** as the templating language.
 
 - [MongoDB](https://cloud.mongodb.com)
   - The project uses **MongoDB** to host the database.
@@ -181,21 +181,21 @@ Python tests carried out have been documented and visualised [here](https://gith
 
 2. Definitions sorted by categories:
    1. Go to the "Home" page.
-   2. Four aphabetical categories are visible.
-   3. Click on one if the categories, the corrisponding definitions are now visible.
+   2. Four alphabetical categories are visible.
+   3. Click on one of the categories, the corresponding definitions are now visible.
   
 3. Update incorrect definitions:
    1. Go to the "Home" page.
-   2. Click on "Login" to login to your account or click on "Register" to register an account.
+   2. Click on "Login" to log in to your account or click on "Register" to register an account.
    3. Click on "Edit Definition".
    4. Choose the term you wish to edit and click on the "Edit" button.
-   5. Make the disired changes.
+   5. Make the desired changes.
    6. Click on "Update Definitions".
    7. Click on the term you updated to view the changes.
 
 4. Add definitions to the site:
    1. Go to the "Home" page.
-   2. Click on "Login" to login to your account or click on "Register" to register an account.
+   2. Click on "Login" to log in to your account or click on "Register" to register an account.
    3. Click on "Add Definition".
    4. Enter the details.
    5. Click on "Add Definition".
@@ -210,7 +210,7 @@ Python tests carried out have been documented and visualised [here](https://gith
 
 ### Issues Found During Testing
 
-- It was possible to add term and definitions into the database without providing all the required data, this was fixed by adding "required" to the revlavent form elements.
+- It was possible to add term and definitions into the database without providing all the required data, this was fixed by adding "required" to the relevant form elements.
 - Long usernames would not render correctly on the mobile navbar, this was fixed by adding "display: block" to the .welcome-message-mbl class.
 
 <span id="deployment"></span>
@@ -240,7 +240,7 @@ git clone https://github.com/filleben/F1Dictionary
 
 6. Press Enter. Your local clone will be created.
 
-Note: You will need to make a **env.py** file containing **MONGO_URI** for the project to connect to the database locally.
+Note: You will need to make an **env.py** file containing **MONGO_URI** for the project to connect to the database locally.
 
 Further reading and troubleshooting on cloning a repository from GitHub can be found [here](https://help.github.com/en/articles/cloning-a-repository).
 
