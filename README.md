@@ -237,3 +237,21 @@ git clone https://github.com/filleben/F1Dictionary
 Note: You will need to make a **env.py** file containing **MONGO_URI** for the project to connect to the database locally.
 
 Further reading and troubleshooting on cloning a repository from GitHub can be found [here](https://help.github.com/en/articles/cloning-a-repository).
+
+<span id="credits"></span>
+
+## Credits
+
+### Content
+
+- The project uses [Materialize](https://materializecss.com/) elements.
+- I used form styling sourced from [Stack Overflow](https://stackoverflow.com/questions/37127123/change-color-of-underline-input-and-label-in-materialize-css-framework-)
+
+### Media
+
+- The Formula 1 Logo was taken from the [Formula 1 Official Site](https://www.formula1.com/).
+
+### Acknowledgements
+
+- **[Paul Friel](https://github.com/Spagettileg/)** for offering guidance on implementing the Login/Register feature.
+- **Gerard McBride** for helping me through the project with his advice and guidance.  
