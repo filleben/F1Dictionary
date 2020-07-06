@@ -1,6 +1,6 @@
 # F1 Dictionary
 
-![Site Preview](...)
+![Site Preview](static/images/site_preview.png)
 
 ---
 
