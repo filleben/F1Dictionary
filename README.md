@@ -163,8 +163,10 @@ I used the following web browsers on both desktop (Windows) and mobile (Android)
 The project was run through both [HTML Validation](https://validator.w3.org/) and [CSS Validation](https://jigsaw.w3.org/css-validator) with no errors found.
 
 HTML and CSS tests carried out have been documented and visualised [here](https://github.com/filleben/F1Dictionary/tree/master/testing/site-testing.pdf)
-JavaScript tests carried out have been documented and visualised [here](https://github.com/filleben/F1MemoryGame/tree/master/testing/js-testing.png)
-Python tests carried out have been documented and visualised [here](https://github.com/filleben/F1MemoryGame/tree/master/testing/python-testing.pdf)
+
+JavaScript tests carried out have been documented and visualised [here](https://github.com/filleben/F1Dictionary/tree/master/testing/js-testing.png)
+
+Python tests carried out have been documented and visualised [here](https://github.com/filleben/F1Dictionary/tree/master/testing/python-testing.pdf)
 
 ### User Story Tests
 
