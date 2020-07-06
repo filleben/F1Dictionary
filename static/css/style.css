@@ -117,4 +117,8 @@ ul.dropdown-content.select-dropdown li span {
         display: block;
         margin-top: 5px;
     }
+
+    .title {
+        font-size: 50px;
+    }
 }
