@@ -1,3 +1,4 @@
+//Initialize Interactive Elements
 $(document).ready(function () {
   $('.sidenav').sidenav();
   $('.collapsible').collapsible();
