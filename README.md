@@ -206,3 +206,34 @@ Python tests carried out have been documented and visualised [here](https://gith
 
 - It was possible to add term and definitions into the database without providing all the required data, this was fixed by adding "required" to the revlavent form elements.
 - Long usernames would not render correctly on the mobile navbar, this was fixed by adding "display: block" to the .welcome-message-mbl class.
+
+<span id="deployment"></span>
+
+## Deployment
+
+To deploy this page to Heroku from its [GitHub repository](https://github.com/filleben/F1Dictionary), the following steps were taken: 
+
+1. Go to the **Heroku Dashboard** and create a **New App** with the region set to **Europe**.
+2. In the **Settings** tab of your app click **Reveal Config Vars**.
+3. Enter the required environment variables, **IP**, **PORT** and **MONGO_URI**.
+4. Go to the **Deploy** tab and select **Heroku Git**. 
+5. In your IDE of choice use the command **git push heroku master**.
+
+Note: You will need the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-command-line) downloaded and installed to push from the command line.
+ 
+To clone this project from GitHub:
+
+1. Under the repository name, click "Clone or download".
+2. In the Clone with HTTPs section, copy the clone URL for the repository. 
+3. Open your IDE of choice.
+4. Change the current working directory to the location where you want the cloned directory to be made.
+5. Type `` `git clone` ``, and then paste the URL you copied in Step 3.
+```console
+git clone https://github.com/filleben/F1Dictionary
+```
+
+6. Press Enter. Your local clone will be created.
+
+Note: You will need to make a **env.py** file containing **MONGO_URI** for the project to connect to the database locally.
+
+Further reading and troubleshooting on cloning a repository from GitHub can be found [here](https://help.github.com/en/articles/cloning-a-repository).
