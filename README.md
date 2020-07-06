@@ -10,7 +10,7 @@
 
 ---
 
-This project is designed for new and casual Formula One fans. The goal of the project is to help improve the understanding of the sport by defining some of the sports most commonly used terms, the project will display the terms in categories based on where they are in the alphabet, user will be able to add new definitions aswell as editing existing definitions if needed.
+Formula One is a very techinal sport full of complicated and unusual terms for both new and seasoned fans, which are used frequetly on both social media and during race boardcasts. The goal of this project is to make a application that can display these terms with their associated definition, to hopefully increase the knowledge and understanding of fans. The project will allow users to add terms and defitions into the database, update and delete definations.
 
 ## Table of Contents
 
