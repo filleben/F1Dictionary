@@ -222,11 +222,16 @@ To deploy this page to Heroku from its [GitHub repository](https://github.com/fi
 1. Go to the **Heroku Dashboard** and create a **New App** with the region set to **Europe**.
 2. In the **Settings** tab of your app click **Reveal Config Vars**.
 3. Enter the required environment variables, **IP**, **PORT** and **MONGO_URI**.
-4. Go to the **Deploy** tab and select **Heroku Git**. 
-5. In your IDE of choice use the command **git push heroku master**.
+4. In your IDE of choice create a **env.py** containing the **MONGO_URI** and add it to the **.gitignore**
+5. In your IDE of choice create a **requirements.txt** by using the command **pip freeze -local > requirements.txt**
+6. In your IDE of choice create a **Profile** by using the command **echo web: python app.py > Procfile**
+7. Go to the **Deploy** tab and select **Heroku Git**. 
+8. In your IDE of choice use the command **git push heroku master**.
 
 Note: You will need the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-command-line) downloaded and installed to push from the command line.
  
+Further reading and troubleshooting on deploying to Heroku can be found [here](https://devcenter.heroku.com/categories/deployment).
+
 To clone this project from GitHub:
 
 1. Under the repository name, click "Clone or download".
